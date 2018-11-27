@@ -1,0 +1,43 @@
+<view class="tipBox">
+      <view class='tipLi'>
+          <image src='/images/1.png'></image>
+          <view>
+            <view>光线充足</view>
+            <view>面部正对摄像头</view>
+          </view>
+      </view>
+      <view class='tipLi'>
+          <image src='/images/2.png'></image>
+          <view>
+            <view>请勿在昏暗或</view>
+            <view>逆光条件下拍摄</view>
+          </view>
+      </view>
+      <view class='tipLi'>
+          <image src='/images/3.png'></image>
+          <view>
+            <view>请勿斜视手机</view>
+            <view>保持正常表情</view>
+          </view>
+      </view>
+</view>
+<view class='tipText'>请确保是<view>{{fkName?fkName:''}}</view>本人进行操作</view>
+<button class='up' bindtap='chooseshow'>上传</button>
+<view class='chooxeBox' wx:if="{{chooseStatus}}">
+    <view class='chooseMain'>
+        <view class='chooseTitle'>
+            方式选择
+            <view class='closeChoose iconfont icon-zhankai' bindtap='closeChoose'></view>
+        </view>
+        <view class='twoChoose'>
+          <view class='camera' data-type="0" bindtap="up">
+              <view class='iconfont icon-xiangce1'></view>
+              <view>照片</view>
+          </view>
+          <view class='camera' data-type="1" bindtap="up">
+              <view class='iconfont icon-paizhao'></view>
+              <view>相机</view>
+          </view>
+        </view>
+    </view>
+</view>

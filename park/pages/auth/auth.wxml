@@ -1,0 +1,6 @@
+<view class="auth">
+  <image src='/images/auth1.png' mode="widthFix"></image>
+  <view class='auth1'>欢迎到访慧谷产业园</view>
+  <view class='auth2'>开启掌上信息录入新时代</view>
+  <view class='enter' bindtap='jump'>立即体验</view>
+</view>

@@ -1,0 +1,36 @@
+/* pages/auth/auth.wxss */
+.auth{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  padding-top: 100rpx;
+}
+.auth image{
+  margin-bottom: 160rpx;
+}
+.auth1{
+  font-size: 50rpx;
+  color: #585858;
+  font-weight: lighter;
+  letter-spacing: 3rpx;
+}
+.auth2{
+  font-size:30rpx;
+  color:#767676;
+  margin-top:20rpx;
+}
+.enter{
+  padding: 20rpx 70rpx;
+  border: 1rpx solid #101EFB;
+  font-size: 28rpx;
+  border-radius:60rpx;
+  color: #101EFB;
+  letter-spacing: 2rpx;
+  margin-top: 160rpx;
+}

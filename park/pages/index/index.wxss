@@ -1,0 +1,159 @@
+/**index.wxss**/
+
+@import "/assets/css/stylesheet.wxss";
+page{
+  background: #F0F1F5;
+  padding: 20rpx 20rpx 80rpx;
+  box-sizing: border-box;
+}
+.welcome{
+    text-align:center;
+    font-size:38rpx;
+    color:#99989D;
+    line-height:100rpx;
+}
+.box{
+  margin-bottom: 30rpx;
+}
+.boxTitle{
+  font-size: 24rpx;
+  margin-bottom: 20rpx;
+  
+}
+.boxMain{
+  background: #fff;
+  padding-left: 30rpx;
+  border-radius: 8rpx;
+}
+.messageLi{
+  display: flex;
+  border-bottom: 1rpx solid #f5f5f5;
+  font-size: 24rpx;
+  align-items: center;
+  height: 80rpx;
+  position: relative;
+}
+.messageLi input,.messageLi picker{
+  flex: 1;
+  /* margin-left: 30rpx; */
+  margin-right: 30rpx;
+}
+.resonBox{
+  display: flex;
+  justify-content: space-between;
+}
+.resonBox view{
+  padding:12rpx 24rpx;
+  background: #fff;
+  font-size:26rpx;
+}
+.next{
+  background: #2937FC;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 30rpx;
+  height:80rpx;
+  line-height:80rpx;
+}
+.sendCode{
+  height:54rpx;
+  /* position:absolute; */
+  right:20rpx;
+  top:0;
+  bottom:0;
+  margin:auto;
+  line-height:54rpx;
+  font-size:26rpx;
+  z-index: 3;
+  color: #2937FC;
+  background: transparent;
+}
+.sendCode::after{
+  border-color: #2937FC;
+}
+.sendCode.disabled::after{
+  border-color: #F7F7F7;
+}
+.resonBox .resonActive{
+  color: #2937FC;
+  position: relative;
+  border: 1rpx solid #2937FC;
+  overflow: hidden;
+}
+ .activeIcon{
+  position: absolute;
+  right: -1rpx;
+  bottom: -3rpx;
+}
+
+.resonBox view{
+  border: 1rpx solid #fff;
+}
+.resonBox .iconfont{
+  padding: 0;
+  border: none
+}
+.tip{
+  width: 100%;
+  background: #E0E1FF;
+  color: #2937FC;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  font-size: 30rpx;
+  line-height: 80rpx;
+  padding-left: 20rpx;
+  box-sizing: border-box;
+}
+.tip .iconfont{
+  margin-right: 15rpx;
+}
+.clear{
+  position: absolute;
+  right: 0;
+  line-height: 80rpx;
+  display: block;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transform: rotate(45deg);
+  color: #706F7D;
+  font-size: 60rpx;
+  font-weight: lighter;
+}
+button.next.disabled{
+   background: #2937FC;
+   color: #fff;
+}
+.messageLi .iconfont{
+  margin-right: 20rpx;
+}
+.iconfont{
+  color: #999;
+}
+.icon-duigoujiaobiao,.icon-gantanhao{
+  color: #2937FC;
+}
+.liLeft{
+  width: 20%;
+}
+.pickerIcon{
+  position:absolute;
+  right:0;
+  top:0;
+  bottom:0;
+  margin:auto;
+  line-height:80rpx;
+}
+.messageLi .iconfont{
+  width:47rpx;
+  height:45rpx;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}

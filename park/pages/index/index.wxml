@@ -1,0 +1,64 @@
+<view class='welcome'>欢迎到访慧谷产业园</view>
+<!-- 被访单位 -->
+<view class='box'>
+  <view class='boxTitle'>访问单位信息</view>
+  <view class='boxMain'>
+    <view class='messageLi'>
+      <view class='liLeft'>联系电话</view>
+      <input placeholder='输入联系电话' type='number' data-type="phone" maxlength='11' bindinput='getMessage' value="{{phone}}"></input>
+      <view class="iconfont {{company?'icon-bottom':'icon-icon-right'}}"></view>
+    </view>
+    <view class='messageLi' wx:if="{{company}}">
+      <view class='liLeft'>企业名称</view>
+      <input disabled value='{{selectCompany}}'></input>
+    </view>
+    <view class='messageLi' wx:if="{{company}}">
+      <view class='liLeft'>访问人员</view>
+      <input disabled value='{{selectMember}}'></input>
+    </view>
+  </view>
+</view>
+<view class='box'>
+  <view class='boxTitle'>个人信息</view>
+  <view class='boxMain'>
+    <view class='messageLi'>
+      <view class='liLeft'>您的姓名</view>
+      <input placeholder='输入您的姓名' data-type="fkName"  maxlength='5' bindinput='getMessage' value='{{fkName}}'></input>
+      <view class='iconfont icon-guanbi' wx:if="{{fkName}}" bindtap='clearName'></view>
+    </view>
+    <view class='messageLi'>
+      <view class='liLeft'>联系电话</view>
+      <input placeholder='输入您的联系电话' type='number' data-type="fkPhone" maxlength='11' value='{{fkPhone}}'  bindinput='getMessage'></input>
+      <view class='iconfont icon-guanbi' wx:if="{{fkPhone}}" bindtap='clearPhone'></view>
+    </view>
+    <view class='messageLi'>
+      <view class='liLeft'>验证码</view>
+      <input placeholder='输入验证码' data-type="code" type='number' maxlength='6' bindinput='getMessage' value='{{code}}'></input>
+      <button class="sendCode {{btnStatus?'disabled':''}}" bindtap='sendCode' disabled="{{btnStatus}}">{{send}}</button>
+    </view>
+    <view class='messageLi'>
+      <view class='liLeft'>到访日期</view>
+      <picker mode="date" value="{{date}}" start="{{startDate}}" end="{{ endDateStart }}" bindchange="bindDateChange">
+        <view class="picker">
+          {{date}}
+        </view>
+         <view class="iconfont icon-icon-right pickerIcon"></view>
+      </picker>
+     
+    </view>
+  </view>
+</view>
+<view class='box' wx:if="{{reson.length!=0}}">
+  <view class='boxTitle'>访问目的</view>
+  <view class='resonBox'>
+    <view wx:for="{{reson}}" wx:key="reson" data-index="{{index}}" data-con="{{item.label}}" bindtap='chooseReson' class="{{index==resonActive||item.label==resonCon?'resonActive':''}}">{{item.label}}
+      <view class='activeIcon iconfont icon-duigoujiaobiao' wx:if="{{index==resonActive}}"></view>
+    </view>
+  </view>
+</view>
+<button class="next {{nextStatus?'disabled':''}}" disabled="{{nextStatus}}" bindtap='next'>下一步</button>
+<view class='tip' wx:if="{{tipStatus}}">
+  <view class='iconfont icon-gantanhao'></view>
+  {{tip}}
+  <view class='clear' bindtap='hideTip'>+</view>
+</view>

@@ -1,0 +1,82 @@
+/* pages/selectCompany/selectCompany.wxss */
+page{
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+.searchBox{
+  position: relative;
+  background: #F6F6F6;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  border-radius: 10rpx;
+}
+.searchBox icon{
+  margin-left: 20rpx;
+}
+.searchBox input{
+  font-size: 28rpx;
+  padding: 10rpx 0 10rpx 10rpx;
+  box-sizing: border-box;
+  height: auto;
+}
+.companyBox{
+  padding-bottom: 130rpx;
+}
+.companyLi{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.companyPic{
+  width:100rpx;
+  height: 100rpx;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.companyPic image{
+  width: 90%;
+  height: 90%;
+}
+.companyCon{
+  flex:1;
+  border-bottom: 1rpx solid #ccc;
+  font-size: 24rpx;
+  padding: 40rpx 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.companyName{
+  font-weight: bold;
+  font-size: 30rpx;
+}
+.companyRow{
+  color: #4D4D4D;
+}
+.companyLi icon{
+  position: absolute;
+  right: 0;
+}
+.selectSure{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  box-shadow: 0px 0px 5px #888888;
+  height: 130rpx;
+  display: flex;
+  align-items: center;
+}
+.selectSure button{
+  width: 90%;
+  background: #4D4CE6;
+  color: #fff;
+  font-size: 30rpx;
+  letter-spacing: 4rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+}

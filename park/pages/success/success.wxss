@@ -1,0 +1,67 @@
+page{
+  background: #F0F1F5;
+}
+.success{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 28rpx;
+  background: #fff;
+  padding: 50rpx 0;
+  color: #343434;
+}
+.successImage{
+  /* margin-top: 20rpx; */
+}
+.successImage image{
+  width:362rpx;
+  height:240rpx;
+
+}
+.successTip{
+  font-size: 30rpx;
+    font-weight: bold;
+}
+.fkMessage{
+  background: #fff;
+  padding: 0 20rpx;
+}
+.fkLi{
+  font-size: 28rpx;
+  display: flex;
+  line-height: 90rpx;
+  border-bottom:1rpx solid #F0F1F5;
+}
+.fkLi>view{
+  margin-left: 30rpx;
+  font-weight: bold;
+  display: flex;
+}
+.tipTime{
+  font-weight: normal;
+  color: #9B9B9B;
+}
+.welcome{
+    text-align:center;
+    font-size:38rpx;
+    color:#99989D;
+    line-height:100rpx;
+}
+
+.changeBox{
+  font-size: 28rpx;
+  display: flex;
+  padding-left: 20rpx;
+  color: #666;
+  margin-top: 20rpx;
+}
+.jump{
+  color: #2937FC;
+  text-decoration: underline;
+}
+.curre{
+  font-size: 28rpx;
+  padding-left: 20rpx;
+  margin-bottom: 20rpx;
+}

@@ -1,0 +1,31 @@
+<view class='welcome' wx:if="{{success}}">欢迎到访慧谷产业园</view>
+<!-- 录入成功 -->
+<view class="success" wx:if="{{!success}}">
+    <view class='successImage'>
+      <image src='/images/success.png' mode='aspectFit'></image>
+    </view>
+    <view class='successTip'>提交成功</view>
+    <view>本次信息提交成功，祝您顺利到访</view>
+</view>
+<view class='curre' wx:if="{{success}}">当前访客信息</view>
+<view class='fkMessage'>
+  <view class='fkLi'>
+      访问企业 <view>{{selectCompany}}</view>
+  </view>
+  <view class='fkLi'>
+      企业位置 <view>{{address}}</view>
+  </view>
+   <view class='fkLi'>
+      访问人员 <view>{{selectMember}}</view>
+  </view>
+   <view class='fkLi'>
+      联系电话 <view>{{phone}}</view>
+  </view>
+    <view class='fkLi'>
+      访问目的 <view>{{fkResonCon}}</view>
+  </view>
+    <view class='fkLi'>
+      访问时间 <view>{{fkTime}}<view class='tipTime'> (当日有效)</view> </view>
+  </view>
+</view>
+<view class='changeBox'>您要变更信息?<view class='jump' bindtap='change'>点击这里</view></view>

@@ -1,0 +1,26 @@
+<camera device-position="front" flash="off" binderror="error" style="width: 100%; height: 100%;" wx:if="{{camera}}">
+<!-- <button type="primary" bindtap="takePhoto">拍照</button> -->
+<cover-view class='mask'>
+   <cover-image src='/images/upBg.png'></cover-image>
+</cover-view>
+<cover-view class='btns'>
+    <cover-view bindtap="back" class='btnGroup small'>
+        <cover-image class='imageBox' src='/images/back.png'></cover-image>
+    </cover-view>
+    <cover-view bindtap="takePhoto" class='btnGroup'>
+        <cover-image class='imageBox' src='/images/camera.png'></cover-image>
+    </cover-view>
+    <cover-view class='btnGroup small' bindtap='choosePic'>
+      <cover-image class='imageBox' src='/images/photo.png'></cover-image>
+    </cover-view>
+</cover-view>
+</camera>
+
+<image  src="{{src}}" wx:if="{{!camera}}" mode="widthFix" class='memberPic'></image>
+<view class='tip' wx:if="{{tipStatus}}">
+  <view class='iconfont icon-gantanhao'></view>
+  {{tip}}
+  <view class='clear' bindtap='hideTip'>+</view>
+</view>
+<button  wx:if="{{!camera&&!picStatus}}" bindtap="again" class='btn'>重新拍摄</button>
+<button  wx:if="{{!camera&&picStatus}}" bindtap="next" class='btn'>提交</button>

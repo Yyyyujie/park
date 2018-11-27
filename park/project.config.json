@@ -1,0 +1,91 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.3.0",
+	"appid": "wx2de7a67d25d41f04",
+	"projectname": "park",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 7,
+			"list": [
+				{
+					"id": -1,
+					"name": "被访单位填写",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "被访企业选择",
+					"pathName": "pages/selectCompany/selectCompany",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "被访人员选择",
+					"pathName": "pages/selectMember/selectMember",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "测试",
+					"pathName": "pages/ceshi/ceshi",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "人脸",
+					"pathName": "pages/face/face",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "上传",
+					"pathName": "pages/uploadPic/uploadPic",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "成功",
+					"pathName": "pages/success/success",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "欢迎页",
+					"pathName": "pages/auth/auth"
+				}
+			]
+		}
+	}
+}

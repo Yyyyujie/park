@@ -1,0 +1,19 @@
+<view class="searchBox">
+  <icon type='search' size='18'></icon>
+  <input type='text' placeholder='搜索企业名称/关键字' placeholder-style='color:#8F8F8F' bindinput='search'></input>
+</view>
+<view class='companyBox'>
+    <view class='companyLi' wx:for="{{newCompany}}" wx:if='{{item}}' wx:key="company" data-id="{{item.id}}" data-index="{{index}}" bindtap='select'>
+      <view class='companyPic'>
+        <image src='/images/logo.png'></image>
+      </view>
+      <view class='companyCon'>
+        <view class='companyName'>{{item.name}}</view>
+        <view class='companyRow'>{{item.row}}</view>
+      </view>
+      <icon type='success' color="{{selectActive==index?'#4D4CE6':'#E5E5E5'}}" size='20'></icon>
+    </view>
+</view>
+<view class='selectSure'>
+  <button bindtap='chooseSure'>确认</button>
+</view>
